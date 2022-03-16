@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+table{
+	border:0;
+	padding:0;
+	margin:0;
+	border-collapse: separate;
+}
+table tr{
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	border-collapse: separate;
+}
+.bbox_r1_c1{
+	background: url(../cgrill/image/bbox_r1_c1.png)top left no-repeat;
+	width:20px;
+	height:20px;
+}
+.bbox_r1_c2{
+	background:url(../cgrill/image/bbox_r1_c2.png) top repeat-x;
+	height:20px;
+
+}
+.bbox_r1_c3{
+	background: url(../cgrill/image/bbox_r1_c3.png) top left no-repeat;
+	width:20px;
+	height:20px;
+}
+.bbox_r2_c1{
+	background: url(../cgrill/image/bbox_r2_c1.png) left repeat-y;
+	width:20px;
+}
+.bbox_r2_c2{
+	background: url(../cgrill/image/bbox_r2_c2.png) top no-repeat;
+}
+.bbox_r2_c3{
+	background:url(../cgrill/image/bbox_r2_c3.png) left repeat-y;
+	width:20px;
+}
+.bbox_r3_c1{
+	background: url(../cgrill/image/bbox_r3_c1.png) bottom left no-repeat;
+	width:20px;
+	height:20px;
+}
+.bbox_r3_c2{
+	background: url(../cgrill/image/bbox_r3_c2.png) bottom repeat-x;
+	height:20px;
+}
+.bbox_r3_c3{
+	background: url(../cgrill/image/bbox_r3_c3.png) bottom left no-repeat;
+	width:20px;
+	height:20px;
+}
