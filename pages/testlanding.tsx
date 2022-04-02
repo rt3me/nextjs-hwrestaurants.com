@@ -167,6 +167,8 @@ const TestLanding: NextPage = () => (
         className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
         src={guyAtDesk}
         alt="Guy at desk"
+        width="720"
+        height="622"
       />
     </div>
   </div>
