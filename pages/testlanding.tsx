@@ -144,13 +144,12 @@ const TestLanding: NextPage = () => (
                 height="82"
                 width="500"
               />
-              <span className="block text-red-700 xl:inline">
+              <span className="block text-red-700">
                 <span className="sr-only">Howard Wang&lsquo;s</span>
-                <br />
                 uptown
               </span>
             </h1>
-            <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+            <p className="mt-3 block text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
               fugiat aliqua.
@@ -158,18 +157,22 @@ const TestLanding: NextPage = () => (
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 <a
-                  href="/get-started"
+                  href="https://order.chownow.com/order/3661/locations"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-700 md:py-4 md:px-10 md:text-lg"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  Get started
+                  Order online
                 </a>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="/demo"
+                  href="http://ezcater.com/brand/pvt/howard-wangs-uptown"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-200 px-8 py-3 text-base font-medium text-gray-700 hover:bg-gray-200 md:py-4 md:px-10 md:text-lg"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  Live demo
+                  Catering
                 </a>
               </div>
             </div>
