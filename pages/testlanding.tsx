@@ -5,7 +5,8 @@ import Image from 'next/image'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import logoSVG from '../public/workflow-mark-indigo-600.svg'
+import logoSVG from '../public/howard-wangs-logo.svg'
+import logoMarkSVG from '../public/howard-wangs-logomark.svg'
 import chefFlamingWokFlyingFood from '../public/images/chef-flaming-wok-flying-food.jpg'
 
 const navigation = [
@@ -22,7 +23,7 @@ const TestLanding: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="description"
-        content="Test Landing Page | Howard Wang's Restaurants is a group of high-end Chinese restaurants based in Texas."
+        content="Test Landing Page | Howard Wang&lsquo;s Restaurants is a group of high-end Chinese restaurants based in Texas."
       />
     </Head>
     <div className="mx-auto max-w-7xl">
@@ -50,10 +51,10 @@ const TestLanding: NextPage = () => (
                       <span className="sr-only">Workflow</span>
                       <Image
                         className="h-8 w-auto sm:h-10"
-                        src={logoSVG}
-                        alt="Logo"
+                        src={logoMarkSVG}
+                        alt="Howard Wang&lsquo;s Logo Mark"
                         height="40"
-                        width="43.75"
+                        width="40"
                       />
                     </a>
                   </Link>
@@ -99,7 +100,13 @@ const TestLanding: NextPage = () => (
               <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
                 <div className="flex items-center justify-between px-5 pt-4">
                   <div>
-                    <Image className="h-8 w-auto" src={logoSVG} alt="Logo" />
+                    <Image
+                      className="h-8 w-auto"
+                      src={logoMarkSVG}
+                      width="40"
+                      height="40"
+                      alt="Howard Wang&lsquo;s Logo"
+                    />
                   </div>
                   <div className="-mr-2">
                     <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -130,9 +137,17 @@ const TestLanding: NextPage = () => (
         <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
           <div className="sm:text-center lg:text-left">
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block xl:inline">Data to enrich your</span>{' '}
+              <Image
+                className="h-8 w-auto sm:h-10"
+                src={logoSVG}
+                alt="Howard Wang&lsquo;s Logo"
+                height="82"
+                width="500"
+              />
               <span className="block text-indigo-600 xl:inline">
-                online business
+                <span className="sr-only">Howard Wang&lsquo;s</span>
+                <br />
+                uptown
               </span>
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
