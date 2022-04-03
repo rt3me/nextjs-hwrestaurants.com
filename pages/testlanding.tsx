@@ -168,7 +168,7 @@ const TestLanding: NextPage = () => (
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="http://ezcater.com/brand/pvt/howard-wangs-uptown"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-700 px-8 py-3 text-base font-medium text-white hover:bg-gray-600 md:py-4 md:px-10 md:text-lg"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-800 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 md:py-4 md:px-10 md:text-lg"
                   target="_blank"
                   rel="noreferrer"
                 >
