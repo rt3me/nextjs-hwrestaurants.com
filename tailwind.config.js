@@ -11,8 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        teal: colors.teal,
-        cyan: colors.cyan,
+        red: colors.red,
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],

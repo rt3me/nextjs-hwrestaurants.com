@@ -59,7 +59,7 @@ const TestLanding: NextPage = () => (
                     </a>
                   </Link>
                   <div className="-mr-2 flex items-center md:hidden">
-                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600">
                       <span className="sr-only">Open main menu</span>
                       <MenuIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -76,7 +76,7 @@ const TestLanding: NextPage = () => (
                 ))}
                 <a
                   href="/login"
-                  className="font-medium text-indigo-600 hover:text-indigo-500"
+                  className="font-medium text-red-700 hover:text-red-600"
                 >
                   Log in
                 </a>
@@ -109,7 +109,7 @@ const TestLanding: NextPage = () => (
                     />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600">
                       <span className="sr-only">Close main menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -125,7 +125,7 @@ const TestLanding: NextPage = () => (
                   ))}
                 </div>
                 <Link href="/login">
-                  <a className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">
+                  <a className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-red-700 hover:bg-gray-100">
                     Log in
                   </a>
                 </Link>
@@ -144,7 +144,7 @@ const TestLanding: NextPage = () => (
                 height="82"
                 width="500"
               />
-              <span className="block text-indigo-600 xl:inline">
+              <span className="block text-red-700 xl:inline">
                 <span className="sr-only">Howard Wang&lsquo;s</span>
                 <br />
                 uptown
@@ -159,7 +159,7 @@ const TestLanding: NextPage = () => (
               <div className="rounded-md shadow">
                 <a
                   href="/get-started"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-700 md:py-4 md:px-10 md:text-lg"
                 >
                   Get started
                 </a>
@@ -167,7 +167,7 @@ const TestLanding: NextPage = () => (
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="/demo"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-200 px-8 py-3 text-base font-medium text-gray-700 hover:bg-gray-200 md:py-4 md:px-10 md:text-lg"
                 >
                   Live demo
                 </a>
