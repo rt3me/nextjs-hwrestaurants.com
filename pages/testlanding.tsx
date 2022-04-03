@@ -158,7 +158,7 @@ const TestLanding: NextPage = () => (
               <div className="rounded-md shadow">
                 <a
                   href="https://order.chownow.com/order/3661/locations"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-700 md:py-4 md:px-10 md:text-lg"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 md:py-4 md:px-10 md:text-lg"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -168,7 +168,7 @@ const TestLanding: NextPage = () => (
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="http://ezcater.com/brand/pvt/howard-wangs-uptown"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-200 px-8 py-3 text-base font-medium text-gray-700 hover:bg-gray-200 md:py-4 md:px-10 md:text-lg"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-700 px-8 py-3 text-base font-medium text-white hover:bg-gray-600 md:py-4 md:px-10 md:text-lg"
                   target="_blank"
                   rel="noreferrer"
                 >
