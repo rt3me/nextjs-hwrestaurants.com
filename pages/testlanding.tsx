@@ -6,7 +6,7 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import logoSVG from '../public/workflow-mark-indigo-600.svg'
-import guyAtDesk from '../public/images/guy-at-desk.avif'
+import chefFlamingWokFlyingFood from '../public/images/chef-flaming-wok-flying-food.jpg'
 
 const navigation = [
   { name: 'Product', href: '/product' },
@@ -165,8 +165,8 @@ const TestLanding: NextPage = () => (
     <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
       <Image
         className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-        src={guyAtDesk}
-        alt="Guy at desk"
+        src={chefFlamingWokFlyingFood}
+        alt="Chef with flaming wok and flying food"
         width="720"
         height="622"
       />
