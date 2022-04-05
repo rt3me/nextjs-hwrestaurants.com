@@ -193,6 +193,71 @@ const TestLanding: NextPage = () => (
         </div>
       </div>
     </header>
+    <main>
+      <div className="relative bg-white">
+        <div className="lg:absolute lg:inset-0">
+          <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
+            <Image
+              className="h-56 w-full object-cover lg:absolute lg:h-full"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
+              alt="About Image"
+              width="640"
+              height="1256"
+            />
+          </div>
+        </div>
+        <div className="relative px-4 pt-12 pb-16 sm:px-6 sm:pt-16 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+          <div className="lg:col-start-2 lg:pl-8">
+            <div className="mx-auto max-w-prose text-base lg:ml-auto lg:mr-0 lg:max-w-lg">
+              <h2 className="font-semibold uppercase leading-6 tracking-wide text-red-600">
+                About Us
+              </h2>
+              <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+                Our Story
+              </h3>
+              <p className="mt-8 text-lg text-gray-500">
+                Since our opening in April of 2011, Howard Wang&lsquo;s Uptown
+                China Brasserie has quickly become THE destination for quality
+                Chinese cuisine, great drinks and a relaxing, modern atmosphere.
+              </p>
+              <div className="prose prose-red mt-5 text-gray-500">
+                <p>
+                  The recipes used are family recipes that breed a very loyal
+                  following at Howard Wang&lsquo;s China Grill. With a
+                  commitment to quality, the rolls and dumplings are prepared
+                  fresh daily.
+                </p>
+                <p>
+                  A short stroll from the Katy Trail and Cole Outlet, patrons
+                  are able to sample a full menu of family recipes for lunch,
+                  dinner, take out or delivery. We also offer room service for
+                  Post Katy Trail residents! Cool off with a refreshing beer
+                  (including 3 Asian beers on tap), glass of wine or a house
+                  cocktail while enjoying the nice Texas evening on our outdoor
+                  porch.
+                </p>
+                <h3>How we&lsquo;re different</h3>
+                <p>
+                  The restaurant is designed to bring customers a feeling of
+                  relaxation and comfort while dining with family and friends.
+                  The Brasserie will offer a &ldquo;taste around&ldquo;
+                  (Emperors Feast) menu that is created for you for any
+                  occasion. The private dining room at the Brasserie is a
+                  perfect setting for this culinary journey.
+                </p>
+                <p>
+                  We will take you and your guests through a culinary journey
+                  with our Emperor&lsquo;s Feast, created for you by our chefs
+                  to suit any occasion or event. We can also bring the taste of
+                  China to you with our exquisite catering services. The Wang
+                  family and committed staff look forward to serving you!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </>
 )
 
