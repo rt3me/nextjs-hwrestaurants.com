@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 const tailwindForms = require('@tailwindcss/forms')
 const tailwindAspectRatio = require('@tailwindcss/aspect-ratio')
+const tailwindTypography = require('@tailwindcss/typography')
 
 module.exports = {
   content: [
@@ -18,5 +19,5 @@ module.exports = {
       },
     },
   },
-  plugins: [tailwindForms, tailwindAspectRatio],
+  plugins: [tailwindForms, tailwindAspectRatio, tailwindTypography],
 }
