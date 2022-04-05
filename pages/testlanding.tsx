@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import Footer from '../components/Footer'
 import logoSVG from '../public/howard-wangs-logo.svg'
 import logoMarkSVG from '../public/howard-wangs-logomark.svg'
 import chefFlamingWokFlyingFood from '../public/images/chef-flaming-wok-flying-food.jpg'
@@ -258,6 +259,7 @@ const TestLanding: NextPage = () => (
         </div>
       </div>
     </main>
+    <Footer />
   </>
 )
 
