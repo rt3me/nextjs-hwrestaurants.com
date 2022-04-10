@@ -7,12 +7,6 @@ module.exports = {
   rules: {
     'jsx-a11y/anchor-is-valid': 'off',
     'react/jsx-props-no-spreading': 'off',
-    'react/jsx-filename-extension': [
-      1,
-      {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    ],
     'react/function-component-definition': [
       2,
       {
@@ -54,6 +48,31 @@ module.exports = {
       },
       rules: {
         'no-undef': 'off',
+        'jsx-a11y/anchor-is-valid': 'off',
+        'react/jsx-props-no-spreading': 'off',
+        'react/jsx-filename-extension': [
+          1,
+          {
+            extensions: ['.js', '.jsx', '.ts', '.tsx'],
+          },
+        ],
+        'react/function-component-definition': [
+          2,
+          {
+            namedComponents: ['function-declaration', 'arrow-function'],
+          },
+        ],
+        'no-unused-vars': 'error',
+        'no-console': 'off',
+        'no-restricted-syntax': [
+          'error',
+          {
+            selector:
+              'CallExpression[callee.object.name="console"][callee.property.name!=/^(log|warn|error|info|trace)$/]',
+            message: 'Unexpected property on console object was called',
+          },
+        ],
+        indent: ['error', 2],
       },
     },
   ],
