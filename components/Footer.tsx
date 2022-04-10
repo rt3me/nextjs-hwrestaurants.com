@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { SVGProps } from 'react'
 import logoMarkSVG from '../public/howard-wangs-logomark.svg'
+import bgImage from '../public/images/chinese-food-pattern.png'
 
 const navigation = {
   solutions: [
@@ -92,9 +93,19 @@ const navigation = {
   ],
 }
 
+const footerStyle = {
+  backgroundImage: `url("${bgImage.src}")`,
+  backgroundPosition: 'top',
+  backgroundRepeat: 'repeat',
+}
+
 export default function Footer() {
   return (
-    <footer className="relative bg-white" aria-labelledby="footer-heading">
+    <footer
+      className="relative bg-black"
+      aria-labelledby="footer-heading"
+      style={footerStyle}
+    >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
