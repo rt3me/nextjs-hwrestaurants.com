@@ -50,14 +50,14 @@ const TestLanding: NextPage = () => (
                   <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                     <div className="flex w-full items-center justify-between md:w-auto">
                       <Link href="/">
-                        <a>
+                        <a className="flex">
                           <span className="sr-only">Workflow</span>
                           <Image
-                            className="h-8 w-auto sm:h-10"
+                            className="h-20 w-auto sm:h-10"
                             src={logoMarkSVG}
                             alt="Howard Wang&lsquo;s Logo Mark"
-                            height="40"
-                            width="40"
+                            height="50"
+                            width="50"
                           />
                         </a>
                       </Link>
