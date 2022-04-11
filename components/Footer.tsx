@@ -109,8 +109,8 @@ export default function Footer() {
               className="h-8 w-auto sm:h-10"
               src={logoMarkSVG}
               alt="Howard Wang&lsquo;s Logo Mark"
-              height="40"
-              width="40"
+              height="50"
+              width="50"
             />
             <p className="text-base text-gray-500">
               Making the world a better place through constructing elegant
