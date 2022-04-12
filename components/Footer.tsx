@@ -96,8 +96,7 @@ export default function Footer() {
               width="50"
             />
             <p className="text-base text-gray-500">
-              Making the world a better place through constructing elegant
-              hierarchies.
+              Howard Wang&lsquo;s, a China Brasserie in Texas.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
@@ -189,7 +188,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 border-t border-gray-500 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+            &copy; 2022 Howard Wang&lsquo;s. All rights reserved.
           </p>
         </div>
       </div>
