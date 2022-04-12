@@ -122,7 +122,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
+                        className="text-base text-gray-500 hover:text-gray-600"
                       >
                         {item.name}
                       </a>
@@ -139,7 +139,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
+                        className="text-base text-gray-500 hover:text-gray-600"
                       >
                         {item.name}
                       </a>
@@ -158,7 +158,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
+                        className="text-base text-gray-500 hover:text-gray-600"
                       >
                         {item.name}
                       </a>
@@ -175,7 +175,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
+                        className="text-base text-gray-500 hover:text-gray-600"
                       >
                         {item.name}
                       </a>
