@@ -179,6 +179,14 @@ const TestLanding: NextPage = () => (
                       Catering
                     </a>
                   </div>
+                  <div className="mt-3 sm:mt-0 sm:ml-3">
+                    <a
+                      href="#reservations"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
+                    >
+                      Reservations
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -255,15 +263,13 @@ const TestLanding: NextPage = () => (
                     </div>
                   </dl>
                 </div>
-                <div>
+                <div id="reservations">
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Reservations
                   </h3>
                   <dl className="mt-2 text-base text-gray-500">
                     <div>
-                      <dt className="sr-only" id="#reservations">
-                        Reservations
-                      </dt>
+                      <dt className="sr-only">Reservations</dt>
                       <dd>Please call the restaurant to make a reservation.</dd>
                     </div>
                   </dl>
