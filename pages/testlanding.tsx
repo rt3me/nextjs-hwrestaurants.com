@@ -192,7 +192,16 @@ const TestLanding: NextPage = () => (
             </div>
           </div>
         </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <div className="flex lg:absolute lg:inset-y-0 lg:right-0 lg:hidden lg:w-1/2">
+          <Image
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
+            src={chefFlamingWokFlyingFood}
+            alt="Chef with flaming wok and flying food"
+            width="1024"
+            height="400"
+          />
+        </div>
+        <div className="hidden lg:absolute lg:inset-y-0 lg:right-0 lg:block lg:w-1/2">
           <Image
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
             src={chefFlamingWokFlyingFood}
