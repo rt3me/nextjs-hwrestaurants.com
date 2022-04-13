@@ -228,7 +228,7 @@ const TestLanding: NextPage = () => (
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Get in touch
                   </h3>
-                  <dl className="mt-2 text-base text-gray-500">
+                  <dl className="mt-2 text-base text-gray-400">
                     <div>
                       <dt className="sr-only">Address</dt>
                       <dd>3223 Lemmon Ave #103</dd>
@@ -247,7 +247,7 @@ const TestLanding: NextPage = () => (
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Hours of operation
                   </h3>
-                  <dl className="mt-2 text-base text-gray-500">
+                  <dl className="mt-2 text-base text-gray-400">
                     <div>
                       <dt className="sr-only">Hours of operation</dt>
                       <dd>Mon-Thur: 11am - 2pm; 4pm - 9pm</dd>
@@ -266,7 +266,7 @@ const TestLanding: NextPage = () => (
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Delivery, takeout
                   </h3>
-                  <dl className="mt-2 text-base text-gray-500">
+                  <dl className="mt-2 text-base text-gray-400">
                     <div>
                       <dt className="sr-only">Delivery and takeout</dt>
                       <dd>
@@ -294,7 +294,7 @@ const TestLanding: NextPage = () => (
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Reservations
                   </h3>
-                  <dl className="mt-2 text-base text-gray-500">
+                  <dl className="mt-2 text-base text-gray-400">
                     <div>
                       <dt className="sr-only">Reservations</dt>
                       <dd>Please call the restaurant to make a reservation.</dd>
@@ -325,11 +325,11 @@ const TestLanding: NextPage = () => (
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Happy Hour: Bites
                   </h3>
-                  <h4 className="text-gray-500">
+                  <h4 className="text-gray-400">
                     4pm - 7pm Monday thru Friday
                   </h4>
-                  <h4 className="text-gray-500">Lounge, bar, and patio only</h4>
-                  <div className="mt-2 text-base text-gray-500">
+                  <h4 className="text-gray-400">Lounge, bar, and patio only</h4>
+                  <div className="mt-2 text-base text-gray-400">
                     <p className="mt-1">
                       <span className="font-bold text-gray-300">$2</span>
                       <br />
@@ -361,11 +361,11 @@ const TestLanding: NextPage = () => (
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Happy Hour: Beverages
                   </h3>
-                  <h4 className="text-gray-500">
+                  <h4 className="text-gray-400">
                     4pm - 7pm Monday thru Friday
                   </h4>
-                  <h4 className="text-gray-500">Lounge, bar, and patio only</h4>
-                  <div className="mt-2 text-base text-gray-500">
+                  <h4 className="text-gray-400">Lounge, bar, and patio only</h4>
+                  <div className="mt-2 text-base text-gray-400">
                     <p className="mt-1">
                       <span className="font-bold text-gray-300">$1</span> Hot
                       Sake (small)
@@ -388,10 +388,10 @@ const TestLanding: NextPage = () => (
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Half Price Wine
                   </h3>
-                  <h4 className="text-gray-500">
+                  <h4 className="text-gray-400">
                     Monday and Thursday all day long
                   </h4>
-                  <div className="mt-2 text-base text-gray-500">
+                  <div className="mt-2 text-base text-gray-400">
                     <p className="mt-1">
                       <span className="font-bold text-gray-300">50% Off</span>{' '}
                       Wine and sake bottles over $35
