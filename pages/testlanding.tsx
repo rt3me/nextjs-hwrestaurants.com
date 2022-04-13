@@ -318,43 +318,83 @@ const TestLanding: NextPage = () => (
             </div>
             <div className="mt-16 pt-16 lg:grid lg:grid-cols-3 lg:gap-8">
               <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
-                Locations
+                Specials
               </h2>
               <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
                 <div>
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
-                    Los Angeles
+                    Happy Hour: Bites
                   </h3>
+                  <h4 className="text-gray-500">
+                    4pm - 7pm Monday thru Friday
+                  </h4>
+                  <h4 className="text-gray-500">Lounge, bar, and patio only</h4>
                   <div className="mt-2 text-base text-gray-500">
-                    <p>4556 Brendan Ferry</p>
-                    <p className="mt-1">Los Angeles, CA 90210</p>
+                    <p className="mt-1">
+                      <span className="font-bold text-gray-300">$2</span>
+                      <br />
+                      Egg Roll (1pc)
+                      <br />
+                      Veggie Spring Roll (1pc)
+                      <br />
+                      Edamame (half order)
+                    </p>
+                    <p className="mt-1">
+                      <span className="font-bold text-gray-300">$3</span>
+                      <br />
+                      Crab Wonton (2pc)
+                      <br />
+                      Shrimp Toast (2pc)
+                      <br />
+                      Fried Potstickers (4pc)
+                      <br />
+                      (Chicken or pork)
+                    </p>
+                    <p className="mt-1">
+                      <span className="font-bold text-gray-300">$5</span>
+                      <br />
+                      Asian Chicken Wings (4pc)
+                    </p>
                   </div>
                 </div>
                 <div>
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
-                    New York
+                    Happy Hour: Beverages
                   </h3>
+                  <h4 className="text-gray-500">
+                    4pm - 7pm Monday thru Friday
+                  </h4>
+                  <h4 className="text-gray-500">Lounge, bar, and patio only</h4>
                   <div className="mt-2 text-base text-gray-500">
-                    <p>886 Walter Streets</p>
-                    <p className="mt-1">New York, NY 12345</p>
+                    <p className="mt-1">
+                      <span className="font-bold text-gray-300">$1</span> Hot
+                      Sake (small)
+                    </p>
+                    <p className="mt-1">
+                      <span className="font-bold text-gray-300">$2</span>{' '}
+                      Sapporo Draft
+                    </p>
+                    <p className="mt-1">
+                      <span className="font-bold text-gray-300">$3</span> Well
+                      Drinks
+                    </p>
+                    <p className="mt-1">
+                      <span className="font-bold text-gray-300">$4</span>{' '}
+                      Selected Wine
+                    </p>
                   </div>
                 </div>
                 <div>
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
-                    Toronto
+                    Half Price Wine
                   </h3>
+                  <h4 className="text-gray-500">Monday and Thursday</h4>
+                  <h4 className="text-gray-500">All day long</h4>
                   <div className="mt-2 text-base text-gray-500">
-                    <p>7363 Cynthia Pass</p>
-                    <p className="mt-1">Toronto, ON N3Y 4H8</p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium leading-6 text-gray-300">
-                    Chicago
-                  </h3>
-                  <div className="mt-2 text-base text-gray-500">
-                    <p>726 Mavis Island</p>
-                    <p className="mt-1">Chicago, IL 60601</p>
+                    <p className="mt-1">
+                      <span className="font-bold text-gray-300">50% Off</span>{' '}
+                      Wine and sake bottles over $35
+                    </p>
                   </div>
                 </div>
               </div>
