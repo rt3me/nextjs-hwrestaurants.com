@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import logoSVG from '../public/howard-wangs-logo.svg'
 import logoMarkSVG from '../public/howard-wangs-logomark.svg'
 import chefFlamingWokFlyingFood from '../public/images/chef-flaming-wok-flying-food.jpg'
+import varietyChineseDishes from '../public/images/variety-chinese-dishes.jpg'
 
 const navigation = [
   { name: 'Product', href: '/product' },
@@ -199,7 +200,7 @@ const TestLanding: NextPage = () => (
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <Image
               className="h-56 w-full object-cover lg:absolute lg:h-full"
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
+              src={varietyChineseDishes}
               alt="About Image"
               layout="fill"
             />
