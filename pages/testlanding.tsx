@@ -12,10 +12,10 @@ import chefFlamingWokFlyingFood from '../public/images/chef-flaming-wok-flying-f
 import varietyChineseDishes from '../public/images/variety-chinese-dishes.jpg'
 
 const navigation = [
-  { name: 'About', href: '#about' },
+  { name: 'Menu', href: '#menu' },
   { name: 'Delivery / takeout', href: '#deliverytakeout' },
   { name: 'Reservations', href: '#reservations' },
-  { name: 'Menu', href: '#menu' },
+  { name: 'About', href: '#about' },
 ]
 
 const TestLanding: NextPage = () => (
