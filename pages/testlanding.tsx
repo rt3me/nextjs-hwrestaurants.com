@@ -171,7 +171,7 @@ const TestLanding: NextPage = () => (
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a
                       href="http://ezcater.com/brand/pvt/howard-wangs-uptown"
-                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-800 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 md:py-4 md:px-10 md:text-lg"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -188,8 +188,7 @@ const TestLanding: NextPage = () => (
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
             src={chefFlamingWokFlyingFood}
             alt="Chef with flaming wok and flying food"
-            width="720"
-            height="622"
+            layout="fill"
           />
         </div>
       </div>
@@ -202,8 +201,7 @@ const TestLanding: NextPage = () => (
               className="h-56 w-full object-cover lg:absolute lg:h-full"
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
               alt="About Image"
-              width="640"
-              height="1256"
+              layout="fill"
             />
           </div>
         </div>
