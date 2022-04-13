@@ -324,7 +324,18 @@ const TestLanding: NextPage = () => (
       </div>
       {/* About section */}
       <div className="relative bg-white">
-        <div className="lg:absolute lg:inset-0">
+        <div className="lg:absolute lg:inset-0 lg:hidden">
+          <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
+            <Image
+              className="h-56 w-full object-cover lg:absolute lg:h-full"
+              src={varietyChineseDishes}
+              alt="About Image"
+              width="1024"
+              height="400"
+            />
+          </div>
+        </div>
+        <div className="hidden lg:inset-0 lg:block first-letter:lg:absolute">
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <Image
               className="h-56 w-full object-cover lg:absolute lg:h-full"
