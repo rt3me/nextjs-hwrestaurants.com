@@ -233,7 +233,9 @@ const TestLanding: NextPage = () => (
                     </div>
                     <div className="mt-1">
                       <dt className="sr-only">Phone number</dt>
-                      <dd>phone: 214-954-9558</dd>
+                      <dd>
+                        phone: <a href="tel:214-954-9558">214-954-9558</a>
+                      </dd>
                       <dd>fax: 214-954-0988</dd>
                     </div>
                   </dl>
@@ -270,6 +272,19 @@ const TestLanding: NextPage = () => (
                         radius.
                       </dd>
                     </div>
+                    <div className="mt-3">
+                      <dt className="sr-only">
+                        Call 2149549558 for takeout and delivery orders
+                      </dt>
+                      <dd>
+                        <a
+                          href="tel:214-954-9558"
+                          className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 sm:w-fit md:py-4 md:px-10 md:text-lg"
+                        >
+                          Call now
+                        </a>
+                      </dd>
+                    </div>
                   </dl>
                 </div>
                 <div id="reservations">
@@ -280,6 +295,19 @@ const TestLanding: NextPage = () => (
                     <div>
                       <dt className="sr-only">Reservations</dt>
                       <dd>Please call the restaurant to make a reservation.</dd>
+                    </div>
+                    <div className="mt-3">
+                      <dt className="sr-only">
+                        Call 2149549558 for takeout and delivery orders
+                      </dt>
+                      <dd>
+                        <a
+                          href="tel:214-954-9558"
+                          className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 sm:w-fit md:py-4 md:px-10 md:text-lg"
+                        >
+                          Call now
+                        </a>
+                      </dd>
                     </div>
                   </dl>
                 </div>
