@@ -388,8 +388,9 @@ const TestLanding: NextPage = () => (
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Half Price Wine
                   </h3>
-                  <h4 className="text-gray-500">Monday and Thursday</h4>
-                  <h4 className="text-gray-500">All day long</h4>
+                  <h4 className="text-gray-500">
+                    Monday and Thursday all day long
+                  </h4>
                   <div className="mt-2 text-base text-gray-500">
                     <p className="mt-1">
                       <span className="font-bold text-gray-300">50% Off</span>{' '}
