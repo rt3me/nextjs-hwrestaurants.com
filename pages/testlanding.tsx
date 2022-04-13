@@ -12,10 +12,10 @@ import chefFlamingWokFlyingFood from '../public/images/chef-flaming-wok-flying-f
 import varietyChineseDishes from '../public/images/variety-chinese-dishes.jpg'
 
 const navigation = [
-  { name: 'Product', href: '/product' },
-  { name: 'Features', href: '/features' },
-  { name: 'Marketplace', href: '/marketplace' },
-  { name: 'Company', href: '/company' },
+  { name: 'About', href: '#about' },
+  { name: 'Delivery / takeout', href: '#deliverytakeout' },
+  { name: 'Reservations', href: '#reservations' },
+  { name: 'Menu', href: '#menu' },
 ]
 
 const TestLanding: NextPage = () => (
@@ -79,10 +79,10 @@ const TestLanding: NextPage = () => (
                       </Link>
                     ))}
                     <a
-                      href="/login"
+                      href="#contact"
                       className="font-medium text-red-700 hover:text-red-600"
                     >
-                      Log in
+                      Contact
                     </a>
                   </div>
                 </nav>
@@ -181,10 +181,10 @@ const TestLanding: NextPage = () => (
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a
-                      href="#reservations"
+                      href="tel:214-954-9558"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
                     >
-                      Reservations
+                      Call now
                     </a>
                   </div>
                 </div>
@@ -220,7 +220,10 @@ const TestLanding: NextPage = () => (
               <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
                 Details
               </h2>
-              <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
+              <div
+                id="contact"
+                className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0"
+              >
                 <div>
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Get in touch
@@ -259,7 +262,7 @@ const TestLanding: NextPage = () => (
                     </div>
                   </dl>
                 </div>
-                <div>
+                <div id="deliverytakeout">
                   <h3 className="text-lg font-medium leading-6 text-gray-300">
                     Delivery, takeout
                   </h3>
@@ -360,7 +363,7 @@ const TestLanding: NextPage = () => (
         </div>
       </div>
       {/* About section */}
-      <div className="relative bg-white">
+      <div id="about" className="relative bg-white">
         <div className="lg:absolute lg:inset-0 lg:hidden">
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <Image
