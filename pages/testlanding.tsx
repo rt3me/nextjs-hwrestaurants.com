@@ -225,8 +225,8 @@ const TestLanding: NextPage = () => (
                 className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0"
               >
                 <div>
-                  <h3 className="text-lg font-medium leading-6 text-gray-300">
-                    Get in touch
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
+                    Get In Touch
                   </h3>
                   <dl className="mt-2 text-base text-gray-400">
                     <div>
@@ -244,8 +244,8 @@ const TestLanding: NextPage = () => (
                   </dl>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium leading-6 text-gray-300">
-                    Hours of operation
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
+                    Hours of Operation
                   </h3>
                   <dl className="mt-2 text-base text-gray-400">
                     <div>
@@ -263,8 +263,8 @@ const TestLanding: NextPage = () => (
                   </dl>
                 </div>
                 <div id="deliverytakeout">
-                  <h3 className="text-lg font-medium leading-6 text-gray-300">
-                    Delivery, takeout
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
+                    Delivery / Takeout
                   </h3>
                   <dl className="mt-2 text-base text-gray-400">
                     <div>
@@ -291,7 +291,7 @@ const TestLanding: NextPage = () => (
                   </dl>
                 </div>
                 <div id="reservations">
-                  <h3 className="text-lg font-medium leading-6 text-gray-300">
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
                     Reservations
                   </h3>
                   <dl className="mt-2 text-base text-gray-400">
@@ -322,7 +322,7 @@ const TestLanding: NextPage = () => (
               </h2>
               <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
                 <div>
-                  <h3 className="text-lg font-medium leading-6 text-gray-300">
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
                     Happy Hour: Bites
                   </h3>
                   <h4 className="text-gray-400">
@@ -331,7 +331,7 @@ const TestLanding: NextPage = () => (
                   <h4 className="text-gray-400">Lounge, bar, and patio only</h4>
                   <div className="mt-2 text-base text-gray-400">
                     <p className="mt-1">
-                      <span className="font-bold text-gray-300">$2</span>
+                      <span className="font-bold text-gray-100">$2</span>
                       <br />
                       Egg Roll (1pc)
                       <br />
@@ -340,7 +340,7 @@ const TestLanding: NextPage = () => (
                       Edamame (half order)
                     </p>
                     <p className="mt-1">
-                      <span className="font-bold text-gray-300">$3</span>
+                      <span className="font-bold text-gray-100">$3</span>
                       <br />
                       Crab Wonton (2pc)
                       <br />
@@ -351,14 +351,14 @@ const TestLanding: NextPage = () => (
                       (Chicken or pork)
                     </p>
                     <p className="mt-1">
-                      <span className="font-bold text-gray-300">$5</span>
+                      <span className="font-bold text-gray-100">$5</span>
                       <br />
                       Asian Chicken Wings (4pc)
                     </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium leading-6 text-gray-300">
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
                     Happy Hour: Beverages
                   </h3>
                   <h4 className="text-gray-400">
@@ -367,25 +367,25 @@ const TestLanding: NextPage = () => (
                   <h4 className="text-gray-400">Lounge, bar, and patio only</h4>
                   <div className="mt-2 text-base text-gray-400">
                     <p className="mt-1">
-                      <span className="font-bold text-gray-300">$1</span> Hot
+                      <span className="font-bold text-gray-100">$1</span> Hot
                       Sake (small)
                     </p>
                     <p className="mt-1">
-                      <span className="font-bold text-gray-300">$2</span>{' '}
+                      <span className="font-bold text-gray-100">$2</span>{' '}
                       Sapporo Draft
                     </p>
                     <p className="mt-1">
-                      <span className="font-bold text-gray-300">$3</span> Well
+                      <span className="font-bold text-gray-100">$3</span> Well
                       Drinks
                     </p>
                     <p className="mt-1">
-                      <span className="font-bold text-gray-300">$4</span>{' '}
+                      <span className="font-bold text-gray-100">$4</span>{' '}
                       Selected Wine
                     </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium leading-6 text-gray-300">
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
                     Half Price Wine
                   </h3>
                   <h4 className="text-gray-400">
@@ -393,7 +393,7 @@ const TestLanding: NextPage = () => (
                   </h4>
                   <div className="mt-2 text-base text-gray-400">
                     <p className="mt-1">
-                      <span className="font-bold text-gray-300">50% Off</span>{' '}
+                      <span className="font-bold text-gray-100">50% Off</span>{' '}
                       Wine and sake bottles over $35
                     </p>
                   </div>
@@ -435,12 +435,12 @@ const TestLanding: NextPage = () => (
               <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                 Our Story
               </h3>
-              <p className="mt-8 text-lg text-gray-500">
+              <p className="mt-8 text-lg text-gray-800">
                 Since our opening in April of 2011, Howard Wang&lsquo;s Uptown
                 China Brasserie has quickly become THE destination for quality
                 Chinese cuisine, great drinks and a relaxing, modern atmosphere.
               </p>
-              <div className="prose prose-red mt-5 text-gray-500">
+              <div className="prose prose-red mt-5 text-gray-600">
                 <p>
                   The recipes used are family recipes that breed a very loyal
                   following at Howard Wang&lsquo;s China Grill. With a
