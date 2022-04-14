@@ -128,9 +128,9 @@ const TestLanding: NextPage = () => (
                         </Link>
                       ))}
                     </div>
-                    <Link href="/login">
+                    <Link href="#specials">
                       <a className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-red-700 hover:bg-gray-100">
-                        Log in
+                        Specials
                       </a>
                     </Link>
                   </div>
