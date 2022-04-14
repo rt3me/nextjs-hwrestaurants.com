@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { MenuIcon, XIcon, NewspaperIcon } from '@heroicons/react/outline'
 import Footer from '../components/Footer'
 import logoSVG from '../public/howard-wangs-logo.svg'
 import logoMarkSVG from '../public/howard-wangs-logomark.svg'
@@ -313,6 +313,54 @@ const TestLanding: NextPage = () => (
                       </dd>
                     </div>
                   </dl>
+                </div>
+              </div>
+            </div>
+            <div
+              id="menu"
+              className="mt-16 pt-16 lg:grid lg:grid-cols-3 lg:gap-8"
+            >
+              <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
+                Menu
+              </h2>
+              <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
+                <div>
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
+                    Dinner Menu
+                  </h3>
+                  <div className="mt-2 text-base text-gray-400">
+                    <a
+                      href="/downloads/menu-dinner.pdf"
+                      className="mt-1 flex items-center justify-center rounded-lg border-2 border-gray-400 p-4"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <NewspaperIcon
+                        className="mr-2 h-8 w-8 text-gray-400"
+                        aria-hidden="true"
+                      />
+                      Click to download our dinner menu
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
+                    Catering Menu
+                  </h3>
+                  <div className="mt-2 text-base text-gray-400">
+                    <a
+                      href="/downloads/menu-catering.pdf"
+                      className="mt-1 flex items-center justify-center rounded-lg border-2 border-gray-400 p-4"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <NewspaperIcon
+                        className="mr-2 h-8 w-8 text-gray-400"
+                        aria-hidden="true"
+                      />
+                      Click to download our catering menu
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
