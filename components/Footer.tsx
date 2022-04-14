@@ -95,7 +95,7 @@ export default function Footer() {
               height="50"
               width="50"
             />
-            <p className="text-base text-gray-500">
+            <p className="text-base text-gray-400">
               Howard Wang&lsquo;s, a China Brasserie in Texas.
             </p>
             <div className="flex space-x-6">
@@ -114,7 +114,7 @@ export default function Footer() {
           <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-100">
                   Solutions
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -122,7 +122,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-600"
+                        className="text-base text-gray-400 hover:text-gray-500"
                       >
                         {item.name}
                       </a>
@@ -131,7 +131,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-100">
                   Support
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -139,7 +139,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-600"
+                        className="text-base text-gray-400 hover:text-gray-500"
                       >
                         {item.name}
                       </a>
@@ -150,7 +150,7 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-100">
                   Company
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -158,7 +158,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-600"
+                        className="text-base text-gray-400 hover:text-gray-500"
                       >
                         {item.name}
                       </a>
@@ -167,7 +167,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-100">
                   Legal
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -175,7 +175,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-600"
+                        className="text-base text-gray-400 hover:text-gray-500"
                       >
                         {item.name}
                       </a>
@@ -186,7 +186,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-500 pt-8">
+        <div className="mt-12 border-t border-gray-400 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
             &copy; 2022 Howard Wang&lsquo;s. All rights reserved.
           </p>
