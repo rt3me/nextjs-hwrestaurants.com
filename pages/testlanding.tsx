@@ -220,26 +220,30 @@ const TestLanding: NextPage = () => (
               <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
                 Details
               </h2>
-              <div
-                id="contact"
-                className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0"
-              >
-                <div>
+              <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
+                <div id="deliverytakeout">
                   <h3 className="text-lg font-bold leading-6 text-gray-100">
-                    Get In Touch
+                    Delivery / Takeout
                   </h3>
                   <dl className="mt-2 text-base text-gray-400">
                     <div>
-                      <dt className="sr-only">Address</dt>
-                      <dd>3223 Lemmon Ave #103</dd>
-                      <dd>Dallas, TX 75204</dd>
-                    </div>
-                    <div className="mt-1">
-                      <dt className="sr-only">Phone number</dt>
+                      <dt className="sr-only">Delivery and takeout</dt>
                       <dd>
-                        phone: <a href="tel:214-954-9558">214-954-9558</a>
+                        Please call us for take out and delivery orders. We
+                        offer curbside pick up and deliver within a 2.5 mile
+                        radius.
                       </dd>
-                      <dd>fax: 214-954-0988</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div id="reservations">
+                  <h3 className="text-lg font-bold leading-6 text-gray-100">
+                    Reservations
+                  </h3>
+                  <dl className="mt-2 text-base text-gray-400">
+                    <div>
+                      <dt className="sr-only">Reservations</dt>
+                      <dd>Please call the restaurant to make a reservation.</dd>
                     </div>
                   </dl>
                 </div>
@@ -262,42 +266,22 @@ const TestLanding: NextPage = () => (
                     </div>
                   </dl>
                 </div>
-                <div id="deliverytakeout">
+                <div id="contact">
                   <h3 className="text-lg font-bold leading-6 text-gray-100">
-                    Delivery / Takeout
+                    Get In Touch
                   </h3>
                   <dl className="mt-2 text-base text-gray-400">
                     <div>
-                      <dt className="sr-only">Delivery and takeout</dt>
-                      <dd>
-                        Please call us for take out and delivery orders. We
-                        offer curbside pick up and deliver within a 2.5 mile
-                        radius.
-                      </dd>
+                      <dt className="sr-only">Address</dt>
+                      <dd>3223 Lemmon Ave #103</dd>
+                      <dd>Dallas, TX 75204</dd>
                     </div>
-                    <div className="mt-3">
-                      <dt className="sr-only">
-                        Call 2149549558 for takeout and delivery orders
-                      </dt>
+                    <div className="mt-1">
+                      <dt className="sr-only">Phone number</dt>
                       <dd>
-                        <a
-                          href="tel:214-954-9558"
-                          className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 sm:w-fit md:py-4 md:px-10 md:text-lg"
-                        >
-                          Call now
-                        </a>
+                        phone: <a href="tel:214-954-9558">214-954-9558</a>
                       </dd>
-                    </div>
-                  </dl>
-                </div>
-                <div id="reservations">
-                  <h3 className="text-lg font-bold leading-6 text-gray-100">
-                    Reservations
-                  </h3>
-                  <dl className="mt-2 text-base text-gray-400">
-                    <div>
-                      <dt className="sr-only">Reservations</dt>
-                      <dd>Please call the restaurant to make a reservation.</dd>
+                      <dd>fax: 214-954-0988</dd>
                     </div>
                     <div className="mt-3">
                       <dt className="sr-only">
@@ -331,15 +315,15 @@ const TestLanding: NextPage = () => (
                   <div className="mt-2 text-base text-gray-400">
                     <a
                       href="/downloads/menu-dinner.pdf"
-                      className="mt-1 flex items-center justify-center rounded-lg border-2 border-gray-400 p-4"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 sm:w-fit md:py-4 md:px-10 md:text-lg"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <NewspaperIcon
-                        className="mr-2 h-8 w-8 text-gray-400"
+                        className="mr-2 h-8 w-8 text-white"
                         aria-hidden="true"
                       />
-                      Click to download our dinner menu
+                      Download dinner menu
                     </a>
                   </div>
                 </div>
@@ -350,15 +334,15 @@ const TestLanding: NextPage = () => (
                   <div className="mt-2 text-base text-gray-400">
                     <a
                       href="/downloads/menu-catering.pdf"
-                      className="mt-1 flex items-center justify-center rounded-lg border-2 border-gray-400 p-4"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 sm:w-fit md:py-4 md:px-10 md:text-lg"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <NewspaperIcon
-                        className="mr-2 h-8 w-8 text-gray-400"
+                        className="mr-2 h-8 w-8 text-white"
                         aria-hidden="true"
                       />
-                      Click to download our catering menu
+                      Download catering menu
                     </a>
                   </div>
                 </div>
