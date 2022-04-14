@@ -166,7 +166,7 @@ const TestLanding: NextPage = () => (
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Order online
+                      Order Online
                     </a>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -181,10 +181,10 @@ const TestLanding: NextPage = () => (
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a
-                      href="tel:214-954-9558"
+                      href="#contact"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
                     >
-                      Call now
+                      Contact Us
                     </a>
                   </div>
                 </div>
