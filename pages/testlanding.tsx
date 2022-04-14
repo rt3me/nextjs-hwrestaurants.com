@@ -13,7 +13,7 @@ import varietyChineseDishes from '../public/images/variety-chinese-dishes.jpg'
 
 const navigation = [
   { name: 'Menu', href: '#menu' },
-  { name: 'Delivery / takeout', href: '#deliverytakeout' },
+  { name: 'Delivery', href: '#deliverytakeout' },
   { name: 'Reservations', href: '#reservations' },
   { name: 'About', href: '#about' },
 ]
@@ -79,10 +79,10 @@ const TestLanding: NextPage = () => (
                       </Link>
                     ))}
                     <a
-                      href="#contact"
+                      href="#specials"
                       className="font-medium text-red-700 hover:text-red-600"
                     >
-                      Contact
+                      Specials
                     </a>
                   </div>
                 </nav>
@@ -316,7 +316,10 @@ const TestLanding: NextPage = () => (
                 </div>
               </div>
             </div>
-            <div className="mt-16 pt-16 lg:grid lg:grid-cols-3 lg:gap-8">
+            <div
+              id="specials"
+              className="mt-16 pt-16 lg:grid lg:grid-cols-3 lg:gap-8"
+            >
               <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
                 Specials
               </h2>
