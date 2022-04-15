@@ -265,42 +265,37 @@ const TestHome: NextPage = () => (
                 <div className="mt-6">
                   <nav className="grid grid-cols-1 gap-7">
                     {solutions.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50"
-                      >
-                        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
-                          <item.icon className="h-6 w-6" aria-hidden="true" />
-                        </div>
-                        <div className="ml-4 text-base font-medium text-gray-900">
-                          {item.name}
-                        </div>
-                      </a>
+                      <Link key={item.name} href={item.href}>
+                        <a className="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+                            <item.icon className="h-6 w-6" aria-hidden="true" />
+                          </div>
+                          <div className="ml-4 text-base font-medium text-gray-900">
+                            {item.name}
+                          </div>
+                        </a>
+                      </Link>
                     ))}
                   </nav>
                 </div>
               </div>
               <div className="py-6 px-5">
                 <div className="grid grid-cols-2 gap-4">
-                  <a
-                    href="#"
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Pricing
-                  </a>
-                  <a
-                    href="#"
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Partners
-                  </a>
-                  <a
-                    href="#"
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Company
-                  </a>
+                  <Link href="/pricing">
+                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Pricing
+                    </a>
+                  </Link>
+                  <Link href="/partners">
+                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Partners
+                    </a>
+                  </Link>
+                  <Link href="/company">
+                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Company
+                    </a>
+                  </Link>
                 </div>
                 <div className="mt-6">
                   <a
