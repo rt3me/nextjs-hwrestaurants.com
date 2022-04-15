@@ -1,3 +1,4 @@
+import type { NextPage } from 'next'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
