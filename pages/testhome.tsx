@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -98,32 +99,6 @@ const features = [
     icon: HeartIcon,
   },
 ]
-const metrics = [
-  {
-    id: 1,
-    stat: '8K+',
-    emphasis: 'Companies',
-    rest: 'use laoreet amet lacus nibh integer quis.',
-  },
-  {
-    id: 2,
-    stat: '25K+',
-    emphasis: 'Countries around the globe',
-    rest: 'lacus nibh integer quis.',
-  },
-  {
-    id: 3,
-    stat: '98%',
-    emphasis: 'Customer satisfaction',
-    rest: 'laoreet amet lacus nibh integer quis.',
-  },
-  {
-    id: 4,
-    stat: '12M+',
-    emphasis: 'Issues resolved',
-    rest: 'lacus nibh integer quis.',
-  },
-]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -145,10 +120,12 @@ const TestHome: NextPage = () => (
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="/findme">
               <span className="sr-only">Workflow</span>
-              <img
+              <Image
                 className="h-8 w-auto sm:h-10"
                 src="https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg"
-                alt=""
+                alt="Logo"
+                width="40"
+                height="40"
               />
             </a>
           </div>
@@ -272,10 +249,12 @@ const TestHome: NextPage = () => (
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <img
+                    <Image
                       className="h-8 w-auto"
                       src="https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg"
                       alt="Workflow"
+                      width="40"
+                      height="40"
                     />
                   </div>
                   <div className="-mr-2">
@@ -353,10 +332,11 @@ const TestHome: NextPage = () => (
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
             <div className="absolute inset-0">
-              <img
+              <Image
                 className="h-full w-full object-cover"
                 src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
                 alt="People working on laptops"
+                layout="fill"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply" />
             </div>
@@ -386,52 +366,6 @@ const TestHome: NextPage = () => (
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Logo Cloud */}
-      <div className="bg-gray-100">
-        <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Trusted by over 5 very average small businesses
-          </p>
-          <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                alt="Tuple"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                alt="Mirage"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                alt="StaticKit"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-              <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                alt="Transistor"
-              />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-              <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                alt="Workcation"
-              />
             </div>
           </div>
         </div>
@@ -488,10 +422,11 @@ const TestHome: NextPage = () => (
                   <footer className="mt-3">
                     <div className="flex items-center space-x-3">
                       <div className="flex-shrink-0">
-                        <img
+                        <Image
                           className="h-6 w-6 rounded-full"
                           src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                          alt=""
+                          alt="Feature"
+                          layout="fill"
                         />
                       </div>
                       <div className="text-base font-medium text-gray-700">
@@ -504,10 +439,11 @@ const TestHome: NextPage = () => (
             </div>
             <div className="mt-12 sm:mt-16 lg:mt-0">
               <div className="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                <img
+                <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                   src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
                   alt="Inbox user interface"
+                  layout="fill"
                 />
               </div>
             </div>
@@ -549,10 +485,11 @@ const TestHome: NextPage = () => (
             </div>
             <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
               <div className="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                <img
+                <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                   src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
                   alt="Customer profile user interface"
+                  layout="fill"
                 />
               </div>
             </div>
@@ -592,59 +529,6 @@ const TestHome: NextPage = () => (
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Stats section */}
-      <div className="relative bg-gray-900">
-        <div className="absolute inset-x-0 bottom-0 h-80 xl:top-0 xl:h-full">
-          <div className="h-full w-full xl:grid xl:grid-cols-2">
-            <div className="h-full xl:relative xl:col-start-2">
-              <img
-                className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                alt="People working on laptops"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8">
-          <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-            <h2 className="text-sm font-semibold uppercase tracking-wide">
-              <span className="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">
-                Valuable Metrics
-              </span>
-            </h2>
-            <p className="mt-3 text-3xl font-extrabold text-white">
-              Get actionable data that will help grow your business
-            </p>
-            <p className="mt-5 text-lg text-gray-300">
-              Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing
-              quis in viverra tristique sem. Ornare feugiat viverra eleifend
-              fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus
-              laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus
-              quis at.
-            </p>
-            <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
-              {metrics.map((item) => (
-                <p key={item.id}>
-                  <span className="block text-2xl font-bold text-white">
-                    {item.stat}
-                  </span>
-                  <span className="mt-1 block text-base text-gray-300">
-                    <span className="font-medium text-white">
-                      {item.emphasis}
-                    </span>{' '}
-                    {item.rest}
-                  </span>
-                </p>
-              ))}
-            </div>
           </div>
         </div>
       </div>
