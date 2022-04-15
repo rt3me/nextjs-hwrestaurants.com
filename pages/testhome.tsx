@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -130,6 +131,14 @@ function classNames(...classes) {
 
 const TestHome: NextPage = () => (
   <>
+    <Head>
+      <title>Test Home Page | Howard Wang&lsquo;s Restaurants</title>
+      <link rel="icon" href="/favicon.ico" />
+      <meta
+        name="description"
+        content="Test Home Page | Howard Wang&lsquo;s Restaurants is a group of high-end Chinese restaurants based in Texas."
+      />
+    </Head>
     <header>
       <Popover className="relative bg-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
