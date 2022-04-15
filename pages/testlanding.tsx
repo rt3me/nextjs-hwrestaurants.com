@@ -357,7 +357,7 @@ const TestLanding: NextPage = () => (
               </h2>
               <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
                 <div>
-                  <h3 className="text-lg font-bold leading-6 text-gray-100">
+                  <h3 className="mb-4 text-5xl font-bold text-gray-100">
                     Happy Hour: Bites
                   </h3>
                   <h4 className="text-gray-400">
@@ -393,7 +393,7 @@ const TestLanding: NextPage = () => (
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold leading-6 text-gray-100">
+                  <h3 className="mb-4 text-5xl font-bold text-gray-100">
                     Happy Hour: Beverages
                   </h3>
                   <h4 className="text-gray-400">
@@ -420,7 +420,7 @@ const TestLanding: NextPage = () => (
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold leading-6 text-gray-100">
+                  <h3 className="mb-4 text-5xl font-bold text-gray-100">
                     Half Price Wine
                   </h3>
                   <h4 className="text-gray-400">
