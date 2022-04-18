@@ -419,12 +419,12 @@ const TestHome: NextPage = () => (
       </div>
 
       {/* Gradient Feature Section */}
-      <div className="bg-gradient-to-r from-purple-800 to-indigo-700">
+      <div className="bg-red-700">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24">
           <h2 className="text-3xl font-extrabold tracking-tight text-white">
             Locations
           </h2>
-          <p className="mt-4 max-w-3xl text-lg text-purple-200">
+          <p className="mt-4 max-w-3xl text-lg text-gray-200">
             In our several locations throughout Texas, Howard Wan&lsquo;s
             Restaurants offers an exceptional dining experience you will not
             want to miss.
@@ -445,7 +445,7 @@ const TestHome: NextPage = () => (
                     <h3 className="text-lg font-medium text-white">
                       {location.name}
                     </h3>
-                    <p className="mt-2 text-base text-purple-200">
+                    <p className="mt-2 text-base text-gray-200">
                       {location.addressStreet}
                       <br />
                       {location.addressCityStateZip}
