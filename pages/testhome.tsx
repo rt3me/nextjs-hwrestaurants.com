@@ -5,99 +5,51 @@ import Image from 'next/image'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
+  LocationMarkerIcon,
   InboxIcon,
   MenuIcon,
-  PencilAltIcon,
-  QuestionMarkCircleIcon,
-  ReplyIcon,
   SparklesIcon,
-  TrashIcon,
-  UsersIcon,
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Footer from '../components/Footer'
 
-const solutions = [
+const locations = [
   {
-    name: 'Inbox',
+    name: 'Preston Hollow',
     description:
-      'Get a better understanding of where your traffic is coming from.',
-    href: '#',
-    icon: InboxIcon,
+      'The ultra contemporary atmosphere brings customers a feeling of relaxation and comfort while dining with family and friends.',
+    addressStreet: '4343 W Northwest Hwy #345',
+    addressCityStateZip: 'Dallas, TX 75220',
+    icon: LocationMarkerIcon,
+    href: '/testlanding',
   },
   {
-    name: 'Messaging',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: AnnotationIcon,
-  },
-  {
-    name: 'Live Chat',
-    description: "Your customers' data will be safe and secure.",
-    href: '#',
-    icon: ChatAlt2Icon,
-  },
-  {
-    name: 'Knowledge Base',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: QuestionMarkCircleIcon,
-  },
-]
-const features = [
-  {
-    name: 'Unlimited Inboxes',
+    name: 'Uptown',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: InboxIcon,
+      "Since our opening in April of 2011, Howard Wang's Uptown China Brasserie has quickly become THE destination for quality Chinese cuisine.",
+    addressStreet: '3223 Lemmon Ave #103',
+    addressCityStateZip: 'Dallas, TX 75204',
+    icon: LocationMarkerIcon,
+    href: '/testlanding',
   },
   {
-    name: 'Manage Team Members',
+    name: 'Mandarin To Go',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: UsersIcon,
+      "A new concept by Howard Wang's restaurants, Mandarin to Go is the source for your to go meals.",
+    addressStreet: '921 W Commerce St',
+    addressCityStateZip: 'Dallas, TX 75208',
+    icon: LocationMarkerIcon,
+    href: '/testlanding',
   },
   {
-    name: 'Spam Report',
+    name: 'Frisco at the Star',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: TrashIcon,
-  },
-  {
-    name: 'Compose in Markdown',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: PencilAltIcon,
-  },
-  {
-    name: 'Team Reporting',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: DocumentReportIcon,
-  },
-  {
-    name: 'Saved Replies',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ReplyIcon,
-  },
-  {
-    name: 'Email Commenting',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ChatAltIcon,
-  },
-  {
-    name: 'Connect with Customers',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: HeartIcon,
+      'We regret to inform you that The Star in Frisco is closing down for good.',
+    addressStreet: '6740 Winning Dr Suite 1000',
+    addressCityStateZip: 'Frisco, TX 75034',
+    icon: LocationMarkerIcon,
+    href: '#frisco',
   },
 ]
 
@@ -148,7 +100,7 @@ const TestHome: NextPage = () => (
                       'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                     )}
                   >
-                    <span>Solutions</span>
+                    <span>Locations</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? 'text-gray-600' : 'text-gray-400',
@@ -170,7 +122,7 @@ const TestHome: NextPage = () => (
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                          {solutions.map((item) => (
+                          {locations.map((item) => (
                             <Link key={item.name} href={item.href}>
                               <a className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                                 <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12">
@@ -264,7 +216,7 @@ const TestHome: NextPage = () => (
                 </div>
                 <div className="mt-6">
                   <nav className="grid grid-cols-1 gap-7">
-                    {solutions.map((item) => (
+                    {locations.map((item) => (
                       <Link key={item.name} href={item.href}>
                         <a className="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                           <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
@@ -468,33 +420,40 @@ const TestHome: NextPage = () => (
       <div className="bg-gradient-to-r from-purple-800 to-indigo-700">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24">
           <h2 className="text-3xl font-extrabold tracking-tight text-white">
-            Inbox support built for efficiency
+            Locations
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-purple-200">
-            Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
-            magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis
-            in.
+            In our several locations throughout Texas, Howard Wan&lsquo;s
+            Restaurants offers an exceptional dining experience you will not
+            want to miss.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
-            {features.map((feature) => (
-              <div key={feature.name}>
-                <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white bg-opacity-10">
-                    <feature.icon
-                      className="h-6 w-6 text-white"
-                      aria-hidden="true"
-                    />
-                  </span>
-                </div>
-                <div className="mt-6">
-                  <h3 className="text-lg font-medium text-white">
-                    {feature.name}
-                  </h3>
-                  <p className="mt-2 text-base text-purple-200">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
+            {locations.map((location) => (
+              <Link href={location.href} key={location.name}>
+                <a className="block">
+                  <div>
+                    <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white bg-opacity-10">
+                      <location.icon
+                        className="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </div>
+                  <div className="mt-6">
+                    <h3 className="text-lg font-medium text-white">
+                      {location.name}
+                    </h3>
+                    <p className="mt-2 text-base text-purple-200">
+                      {location.addressStreet}
+                      <br />
+                      {location.addressCityStateZip}
+                      <br />
+                      <br />
+                      {location.description}
+                    </p>
+                  </div>
+                </a>
+              </Link>
             ))}
           </div>
         </div>
