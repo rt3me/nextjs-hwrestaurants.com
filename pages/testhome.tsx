@@ -125,7 +125,7 @@ const TestHome: NextPage = () => (
                           {locations.map((item) => (
                             <Link key={item.name} href={item.href}>
                               <a className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
-                                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12">
+                                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-red-700 text-white sm:h-12 sm:w-12">
                                   <item.icon
                                     className="h-6 w-6"
                                     aria-hidden="true"
@@ -427,7 +427,7 @@ const TestHome: NextPage = () => (
           <p className="mt-4 max-w-3xl text-lg text-gray-200">
             In our several locations throughout Texas, Howard Wan&lsquo;s
             Restaurants offers an exceptional dining experience you will not
-            want to miss.
+            want to miss. Click a location for more details.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
             {locations.map((location) => (
