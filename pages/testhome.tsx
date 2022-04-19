@@ -16,6 +16,8 @@ import Footer from '../components/Footer'
 import logoMarkSVG from '../public/howard-wangs-logomark.svg'
 import combinationMarkSVG from '../public/howard-wangs-combinationmark.svg'
 import chefFlamingWokDump from '../public/images/chef-flaming-wok-dump.jpg'
+import stirFryWok from '../public/images/stir-fry-wok.jpg'
+import steamingChickenDish from '../public/images/steaming-chicken-dish.jpg'
 
 const locations = [
   {
@@ -170,11 +172,6 @@ const TestHome: NextPage = () => (
                 News
               </a>
             </Link>
-            <Link href="#reviews">
-              <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                Reviews
-              </a>
-            </Link>
             <Link href="#togo">
               <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                 To Go
@@ -255,11 +252,6 @@ const TestHome: NextPage = () => (
                   <Link href="#news">
                     <a className="w-100 text-center text-base font-medium text-gray-900 hover:text-gray-700">
                       News
-                    </a>
-                  </Link>
-                  <Link href="#reviews">
-                    <a className="w-100 text-center text-base font-medium text-gray-900 hover:text-gray-700">
-                      Reviews
                     </a>
                   </Link>
                   <Link href="#togo">
@@ -353,7 +345,7 @@ const TestHome: NextPage = () => (
             <div className="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
               <div>
                 <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-md bg-red-700">
                     <InboxIcon
                       className="h-6 w-6 text-white"
                       aria-hidden="true"
@@ -362,23 +354,15 @@ const TestHome: NextPage = () => (
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                    Stay on top of customer support
+                    Dallas Observer Review
                   </h2>
                   <p className="mt-4 text-lg text-gray-500">
-                    Semper curabitur ullamcorper posuere nunc sed. Ornare
-                    iaculis bibendum malesuada faucibus lacinia porttitor.
-                    Pulvinar laoreet sagittis viverra duis. In venenatis sem
-                    arcu pretium pharetra at. Lectus viverra dui tellus ornare
-                    pharetra.
+                    &ldquo;The first thing you notice is the sleek décor – then
+                    the outstanding service. Of course, everything hinges on the
+                    food, and here Howard Wang&lsquo;s delivers with top-notch
+                    ingredients and preparation. Now when we want a Chinese food
+                    fix, this is where we go.&ldquo;
                   </p>
-                  <div className="mt-6">
-                    <a
-                      href="#"
-                      className="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
-                    >
-                      Get started
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -386,8 +370,8 @@ const TestHome: NextPage = () => (
               <div className="relative -mr-48 pl-4">
                 <Image
                   className="absolute left-0 w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                  src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
-                  alt="Inbox user interface"
+                  src={stirFryWok}
+                  alt="Wok with stir fry"
                   width="952"
                   height="571"
                 />
@@ -400,7 +384,7 @@ const TestHome: NextPage = () => (
             <div className="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
               <div>
                 <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-md bg-red-700">
                     <SparklesIcon
                       className="h-6 w-6 text-white"
                       aria-hidden="true"
@@ -409,23 +393,16 @@ const TestHome: NextPage = () => (
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                    Better understand your customers
+                    Tripadvisor Review
                   </h2>
                   <p className="mt-4 text-lg text-gray-500">
-                    Semper curabitur ullamcorper posuere nunc sed. Ornare
-                    iaculis bibendum malesuada faucibus lacinia porttitor.
-                    Pulvinar laoreet sagittis viverra duis. In venenatis sem
-                    arcu pretium pharetra at. Lectus viverra dui tellus ornare
-                    pharetra.
+                    &ldquo;Chinese Food can be tricky, and it&lsquo;s sometimes
+                    hard to find someone who does it right. Howard Wang&lsquo;s
+                    is one of those places. The food is very fresh, and each
+                    dish that I&lsquo;ve ordered here never disappoints. You
+                    leave full, and you never regret coming. Check them
+                    out!&ldquo;
                   </p>
-                  <div className="mt-6">
-                    <a
-                      href="#"
-                      className="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
-                    >
-                      Get started
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -433,8 +410,8 @@ const TestHome: NextPage = () => (
               <div className="relative -ml-48 pr-4">
                 <Image
                   className="absolute right-0 w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                  src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
-                  alt="Customer profile user interface"
+                  src={steamingChickenDish}
+                  alt="Steaming chicken dish"
                   width="952"
                   height="571"
                 />
