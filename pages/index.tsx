@@ -530,7 +530,7 @@ const TestHome: NextPage = () => (
             </a>
             <Link href="/testlanding">
               <a className="flex items-center justify-center rounded-md border border-transparent bg-black px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900">
-                Learn More
+                About Mandarin
               </a>
             </Link>
           </div>
