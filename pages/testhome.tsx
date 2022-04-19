@@ -54,7 +54,7 @@ const locations = [
     addressStreet: '6740 Winning Dr Suite 1000',
     addressCityStateZip: 'Frisco, TX 75034',
     icon: LocationMarkerIcon,
-    href: '#frisco',
+    href: '#news',
   },
 ]
 
