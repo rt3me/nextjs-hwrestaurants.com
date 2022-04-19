@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+import { Popover, Transition, Disclosure } from '@headlessui/react'
 import {
   LocationMarkerIcon,
   InboxIcon,
@@ -61,6 +61,17 @@ const locations = [
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
+
+const news = [
+  {
+    title: 'Frisco Location Closed',
+    text: 'We regret to inform you that The Star in Frisco is closing down for good. Unfortunately, the pandemic was not enough to sustain our restaurant. On a brighter note, we are opening a new location in far North Dallas on Hillcrest/Arapaho at Hillcrest Village. We wanted to take the time out to thank all of our loyal patrons throughout the years!',
+  },
+  {
+    title: 'COVID Update',
+    text: 'Now and always, the health and safety of our guests and team members remain our top priority. Please be assured that we are taking every possible safety protocol and are closely monitoring all CDC guidelines to protect against the exposure of the Coronavirus. During this time, our stores have new hours and will be offering Takeout and Delivery Only. Our 3rd Party Delivery services are taking additional steps to ensure safe food handling and protection for their drivers and our customers by offering non-contact delivery to your doorstep. Thank you for your support of our small family business as we navigate this challenging situation one day at a time. With love and gratitude, Howard & The Family',
+  },
+]
 
 const TestHome: NextPage = () => (
   <>
@@ -319,14 +330,11 @@ const TestHome: NextPage = () => (
                   >
                     Locations
                   </a>
-                  <a
-                    href="https://order.chownow.com/order/3661/locations"
-                    className="flex items-center justify-center rounded-md border border-transparent bg-gray-500 bg-opacity-70 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-80 sm:px-8"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Order Online
-                  </a>
+                  <Link href="#news">
+                    <a className="flex items-center justify-center rounded-md border border-transparent bg-gray-500 bg-opacity-70 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-80 sm:px-8">
+                      News
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -417,6 +425,46 @@ const TestHome: NextPage = () => (
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Latest News Section */}
+      <div id="news" className="bg-gray-100">
+        <div className="mx-auto max-w-7xl py-12 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl divide-y-2 divide-gray-200">
+            <h2 className="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Latest News
+            </h2>
+            <dl className="mt-6 space-y-6 divide-y divide-gray-200">
+              {news.map((item) => (
+                <Disclosure as="div" key={item.title} className="pt-6">
+                  {({ open }) => (
+                    <>
+                      <dt className="text-lg">
+                        <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-400">
+                          <span className="font-medium text-gray-900">
+                            {item.title}
+                          </span>
+                          <span className="ml-6 flex h-7 items-center">
+                            <ChevronDownIcon
+                              className={classNames(
+                                open ? '-rotate-180' : 'rotate-0',
+                                'h-6 w-6 transform'
+                              )}
+                              aria-hidden="true"
+                            />
+                          </span>
+                        </Disclosure.Button>
+                      </dt>
+                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                        <p className="text-base text-gray-500">{item.text}</p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              ))}
+            </dl>
           </div>
         </div>
       </div>
