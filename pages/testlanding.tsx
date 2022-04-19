@@ -15,17 +15,17 @@ const navigation = [
   { name: 'Menu', href: '#menu' },
   { name: 'Delivery', href: '#deliverytakeout' },
   { name: 'Reservations', href: '#reservations' },
-  { name: 'About', href: '#about' },
+  { name: 'All Locations', href: '/' },
 ]
 
 const TestLanding: NextPage = () => (
   <>
     <Head>
-      <title>Test Landing Page | Howard Wang&lsquo;s Restaurants</title>
+      <title>Uptown | Howard Wang&lsquo;s Restaurants</title>
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="description"
-        content="Test Landing Page | Howard Wang&lsquo;s Restaurants is a group of high-end Chinese restaurants based in Texas."
+        content="Uptown Howard Wang&lsquo;s Restaurants is a group of high-end Chinese restaurants based in Texas."
       />
     </Head>
     <header>
