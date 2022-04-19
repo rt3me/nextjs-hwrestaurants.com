@@ -13,6 +13,8 @@ import {
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Footer from '../components/Footer'
+import logoMarkSVG from '../public/howard-wangs-logomark.svg'
+import combinationMarkSVG from '../public/howard-wangs-combinationmark.svg'
 import chefFlamingWokDump from '../public/images/chef-flaming-wok-dump.jpg'
 
 const locations = [
@@ -73,14 +75,26 @@ const TestHome: NextPage = () => (
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
-              <a>
+              <a className="flex md:hidden lg:flex">
                 <span className="sr-only">Workflow</span>
                 <Image
-                  className="h-8 w-auto sm:h-10"
-                  src="https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg"
-                  alt="Logo"
-                  width="40"
-                  height="40"
+                  className="h-20 w-auto sm:h-10"
+                  src={combinationMarkSVG}
+                  alt="Howard Wang&lsquo;s Logo Mark"
+                  height="50"
+                  width="238"
+                />
+              </a>
+            </Link>
+            <Link href="/">
+              <a className="hidden md:flex lg:hidden">
+                <span className="sr-only">Workflow</span>
+                <Image
+                  className="h-20 w-auto sm:h-10"
+                  src={logoMarkSVG}
+                  alt="Howard Wang&lsquo;s Logo Mark"
+                  height="50"
+                  width="50"
                 />
               </a>
             </Link>
@@ -151,34 +165,38 @@ const TestHome: NextPage = () => (
               )}
             </Popover>
 
-            <Link href="/pricing">
+            <Link href="#news">
               <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                Pricing
+                News
               </a>
             </Link>
-            <Link href="/partners">
+            <Link href="#reviews">
               <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                Partners
+                Reviews
               </a>
             </Link>
-            <Link href="/company">
+            <Link href="#togo">
               <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                Company
+                To Go
               </a>
             </Link>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <a
-              href="#"
+              href="http://ezcater.com/brand/pvt/howard-wangs-uptown"
               className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+              target="_blank"
+              rel="noreferrer"
             >
-              Sign in
+              Catering
             </a>
             <a
-              href="#"
-              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
+              href="https://order.chownow.com/order/3661/locations"
+              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-700 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
+              target="_blank"
+              rel="noreferrer"
             >
-              Sign up
+              Order Online
             </a>
           </div>
         </div>
@@ -201,11 +219,11 @@ const TestHome: NextPage = () => (
                 <div className="flex items-center justify-between">
                   <div>
                     <Image
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg"
-                      alt="Workflow"
-                      width="40"
-                      height="40"
+                      className="h-20 w-auto sm:h-10"
+                      src={logoMarkSVG}
+                      alt="Howard Wang&lsquo;s Logo Mark"
+                      height="50"
+                      width="50"
                     />
                   </div>
                   <div className="-mr-2">
@@ -216,11 +234,11 @@ const TestHome: NextPage = () => (
                   </div>
                 </div>
                 <div className="mt-6">
-                  <nav className="grid grid-cols-1 gap-7">
+                  <nav className="grid grid-cols-1 justify-center gap-7">
                     {locations.map((item) => (
                       <Link key={item.name} href={item.href}>
-                        <a className="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
-                          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+                        <a className="-m-3 flex items-center justify-center rounded-lg p-3 hover:bg-gray-50">
+                          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-red-700 text-white">
                             <item.icon className="h-6 w-6" aria-hidden="true" />
                           </div>
                           <div className="ml-4 text-base font-medium text-gray-900">
@@ -233,36 +251,41 @@ const TestHome: NextPage = () => (
                 </div>
               </div>
               <div className="py-6 px-5">
-                <div className="grid grid-cols-2 gap-4">
-                  <Link href="/pricing">
-                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Pricing
+                <div className="grid grid-cols-1 gap-4">
+                  <Link href="#news">
+                    <a className="w-100 text-center text-base font-medium text-gray-900 hover:text-gray-700">
+                      News
                     </a>
                   </Link>
-                  <Link href="/partners">
-                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Partners
+                  <Link href="#reviews">
+                    <a className="w-100 text-center text-base font-medium text-gray-900 hover:text-gray-700">
+                      Reviews
                     </a>
                   </Link>
-                  <Link href="/company">
-                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Company
+                  <Link href="#togo">
+                    <a className="w-100 text-center text-base font-medium text-gray-900 hover:text-gray-700">
+                      To Go
+                    </a>
+                  </Link>
+                  <Link href="http://ezcater.com/brand/pvt/howard-wangs-uptown">
+                    <a
+                      className="w-100 text-center text-base font-medium text-gray-900 hover:text-gray-700"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Catering
                     </a>
                   </Link>
                 </div>
                 <div className="mt-6">
                   <a
-                    href="#"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
+                    href="https://order.chownow.com/order/3661/locations"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    Sign up
+                    Order Online
                   </a>
-                  <p className="mt-6 text-center text-base font-medium text-gray-500">
-                    Existing customer?
-                    <a href="#" className="text-gray-900">
-                      Sign in
-                    </a>
-                  </p>
                 </div>
               </div>
             </div>
@@ -465,7 +488,7 @@ const TestHome: NextPage = () => (
       </div>
 
       {/* CTA Section */}
-      <div className="bg-white">
+      <div id="togo" className="bg-white">
         <div className="mx-auto max-w-4xl py-16 px-4 sm:px-6 sm:py-24 lg:flex lg:max-w-7xl lg:items-center lg:justify-between lg:px-8">
           <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Why not treat yourself?</span>
