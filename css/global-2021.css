@@ -38,13 +38,15 @@ div.home-info > * {
 }
 p.copy-hours {
   background-color: rgba(255, 255, 255, 0.53);
-  padding: 20px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 p.copy-letter,
 p.copy-letter-closure {
   background-color: rgba(255, 255, 255, 0.53);
-  padding: 20px;
+  padding: 10px;
   text-align: left;
+  box-sizing: border-box;
 }
 a.button {
   background-color: red;
@@ -73,7 +75,7 @@ a.button {
   width: 100%;
   height: 100%;
 }
-
+#farther-right,
 #far-right,
 #right,
 #middle,
@@ -96,9 +98,13 @@ a.button {
   background: url(../img/circle-frisco.png) no-repeat;
 }
 #far-right {
-  background: url(../img/circle-mandarin-order-now.png) no-repeat;
+  background: url(../img/circle-mandarin-dallas.png) no-repeat;
+}
+#farther-right {
+  background: url(../img/circle-mandarin-farmers-branch.png) no-repeat;
 }
 
+#farther-right:hover,
 #far-right:hover,
 #right:hover,
 #middle:hover,
@@ -106,6 +112,7 @@ a.button {
   opacity: 0.9;
 }
 
+#farther-right a,
 #far-right a,
 #right a,
 #middle a,
@@ -114,6 +121,7 @@ a.button {
   text-indent: -99999em;
 }
 
+#farther-right .location,
 #far-right .location,
 #right .location,
 #middle .location,
@@ -151,13 +159,13 @@ a.button {
 }
 
 div.home-info {
-  height: 1200px;
+  height: 1475px;
 }
 a.button {
   bottom: 1075px;
 }
 p.copy-hours {
-  bottom: 300px;
+  bottom: 315px;
 }
 p.copy-letter-closure {
   bottom: 325px;
@@ -173,8 +181,7 @@ div.home-info > * {
 }
 
 :root {
-  --left-circle-mobile-top: -220px;
-  --left-circle-mobile-top-350-up: calc(var(--left-circle-mobile-top) - 70px);
+  --left-circle-mobile-top: -325px;
 }
 
 #left {
@@ -189,6 +196,11 @@ div.home-info > * {
 #far-right {
   margin-top: calc(var(--left-circle-mobile-top) + 315px);
 }
+#farther-right {
+  margin-top: calc(var(--left-circle-mobile-top) + 420px);
+}
+
+#farther-right,
 #far-right,
 #right,
 #middle,
@@ -202,20 +214,7 @@ div.home-info > * {
 
 @media screen and (min-width: 350px) {
   div.home-info {
-    height: 1250px;
-  }
-
-  #left {
-    margin-top: var(--left-circle-mobile-top-350-up);
-  }
-  #middle {
-    margin-top: calc(var(--left-circle-mobile-top-350-up) + 105px);
-  }
-  #right {
-    margin-top: calc(var(--left-circle-mobile-top-350-up) + 210px);
-  }
-  #far-right {
-    margin-top: calc(var(--left-circle-mobile-top-350-up) + 315px);
+    height: 1450px;
   }
 
   p.copy-letter {
@@ -230,10 +229,6 @@ div.home-info > * {
   /*div.home-info {height: 1540px;}*/
   div.home-info > * {
     width: 350px;
-  }
-
-  div.home-info {
-    height: 1400px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -262,18 +257,22 @@ div.home-info > * {
   }
 
   #left {
-    margin-left: -256px;
+    margin-left: -320px;
   }
   #middle {
-    margin-left: -129px;
+    margin-left: -193px;
   }
   #right {
-    margin-left: -2px;
+    margin-left: -66px;
   }
   #far-right {
-    margin-left: 125px;
+    margin-left: 61px;
+  }
+  #farther-right {
+    margin-left: 188px;
   }
 
+  #farther-right,
   #far-right,
   #right,
   #middle,
