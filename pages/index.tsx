@@ -147,7 +147,7 @@ const TestHome: NextPage = () => (
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-10 mt-3 -ml-4 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                           {locations.map((item) => (
@@ -258,7 +258,7 @@ const TestHome: NextPage = () => (
                   </nav>
                 </div>
               </div>
-              <div className="py-6 px-5">
+              <div className="px-5 py-6">
                 <div className="grid grid-cols-1 gap-4">
                   <Link href="#news">
                     <a className="w-100 text-center text-base font-medium text-gray-900 hover:text-gray-700">
@@ -431,7 +431,7 @@ const TestHome: NextPage = () => (
 
       {/* Latest News Section */}
       <div id="news" className="bg-gray-100">
-        <div className="mx-auto max-w-7xl py-12 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:py-24 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl divide-y-2 divide-gray-200">
             <h2 className="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">
               Latest News
@@ -470,7 +470,7 @@ const TestHome: NextPage = () => (
       </div>
 
       {/* Gradient Feature Section */}
-      <div id="locations" className="bg-red-700">
+      <div id="locations" className="bg-neutral-700">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24">
           <h2 className="text-3xl font-extrabold tracking-tight text-white">
             Locations
@@ -514,7 +514,7 @@ const TestHome: NextPage = () => (
 
       {/* CTA Section */}
       <div id="togo" className="bg-white">
-        <div className="mx-auto max-w-4xl py-16 px-4 sm:px-6 sm:py-24 lg:flex lg:max-w-7xl lg:items-center lg:justify-between lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:flex lg:max-w-7xl lg:items-center lg:justify-between lg:px-8">
           <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Why not treat yourself?</span>
             <span className="-mb-1 block pb-1 text-red-700">
