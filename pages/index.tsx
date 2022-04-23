@@ -470,7 +470,7 @@ const TestHome: NextPage = () => (
       </div>
 
       {/* Gradient Feature Section */}
-      <div id="locations" className="bg-neutral-700">
+      <div id="locations" className="bg-black">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24">
           <h2 className="text-3xl font-extrabold tracking-tight text-white">
             Locations
