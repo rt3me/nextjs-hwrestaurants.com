@@ -310,7 +310,7 @@ const TestHome: NextPage = () => (
                 alt="Chef tilting flaming wok"
                 layout="fill"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-red-600 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-700 mix-blend-multiply" />
             </div>
             <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
               <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
