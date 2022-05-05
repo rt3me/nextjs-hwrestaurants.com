@@ -167,7 +167,7 @@ const TestHome: NextPage = () => {
                       <Image
                         className="h-20 w-auto sm:h-10"
                         src={combinationMarkSVG}
-                        alt="Howard Wang&lsquo;s Logo Mark findhere"
+                        alt="Howard Wang&lsquo;s Logo Mark"
                         height="50"
                         width="238"
                       />
