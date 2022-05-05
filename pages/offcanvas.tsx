@@ -19,8 +19,8 @@ import {
 
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Footer from '../components/Footer'
-/* import logoMarkSVG from '../public/howard-wangs-logomark.svg'
-import combinationMarkSVG from '../public/howard-wangs-combinationmark.svg' */
+/* import logoMarkSVG from '../public/howard-wangs-logomark.svg' */
+import combinationMarkSVG from '../public/howard-wangs-combinationmark.svg'
 import chefFlamingWokDump from '../public/images/chef-flaming-wok-dump.jpg'
 import stirFryWok from '../public/images/stir-fry-wok.jpg'
 import steamingChickenDish from '../public/images/steaming-chicken-dish.jpg'
@@ -164,10 +164,12 @@ const TestHome: NextPage = () => {
                   </Transition.Child>
                   <div className="h-0 flex-1 overflow-y-auto pt-5 pb-4">
                     <div className="flex flex-shrink-0 items-center px-4">
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                        alt="Workflow"
+                      <Image
+                        className="h-20 w-auto sm:h-10"
+                        src={combinationMarkSVG}
+                        alt="Howard Wang&lsquo;s Logo Mark findhere"
+                        height="50"
+                        width="238"
                       />
                     </div>
                     <nav className="mt-5 space-y-1 px-2">
