@@ -213,10 +213,12 @@ const TestHome: NextPage = () => {
           <div className="flex min-h-0 flex-1 flex-col bg-gray-800">
             <div className="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
               <div className="flex flex-shrink-0 items-center px-4">
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                  alt="Workflow"
+                <Image
+                  className="h-20 w-auto sm:h-10"
+                  src={combinationMarkSVG}
+                  alt="Howard Wang&lsquo;s Logo Mark"
+                  height="50"
+                  width="238"
                 />
               </div>
               <nav className="mt-5 flex-1 space-y-1 px-2">
