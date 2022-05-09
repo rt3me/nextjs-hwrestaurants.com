@@ -168,8 +168,8 @@ const TestHome: NextPage = () => {
                         className="h-20 w-auto sm:h-10"
                         src={combinationMarkSVG}
                         alt="Howard Wang&lsquo;s Logo Mark"
-                        height="50"
-                        width="238"
+                        height="45"
+                        width="230"
                       />
                     </div>
                     <nav className="mt-5 space-y-1 px-2">
@@ -217,8 +217,8 @@ const TestHome: NextPage = () => {
                   className="h-20 w-auto sm:h-10"
                   src={combinationMarkSVG}
                   alt="Howard Wang&lsquo;s Logo Mark"
-                  height="50"
-                  width="238"
+                  height="45"
+                  width="230"
                 />
               </div>
               <nav className="mt-5 flex-1 space-y-1 px-2">
