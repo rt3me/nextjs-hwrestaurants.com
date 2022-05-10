@@ -138,7 +138,7 @@ const TestHome: NextPage = () => {
                 leaveFrom="translate-x-0"
                 leaveTo="-translate-x-full"
               >
-                <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-gray-800">
+                <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-white">
                   <Transition.Child
                     as={Fragment}
                     enter="ease-in-out duration-300"
@@ -179,8 +179,8 @@ const TestHome: NextPage = () => {
                           href={item.href}
                           className={classNames(
                             item.current
-                              ? 'bg-gray-900 text-white'
-                              : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              ? 'bg-neutral-900 text-white'
+                              : 'text-netrual-900 hover:bg-neutral-900 hover:text-white',
                             'group flex items-center rounded-md px-2 py-2 text-base font-medium'
                           )}
                         >
