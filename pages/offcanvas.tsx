@@ -261,10 +261,10 @@ const TestHome: NextPage = () => {
             </button>
           </div>
           <main className="flex-1">
-            <div className="py-6">
+            <div className="sm:py-6">
               <div className="mx-auto">
                 {/* Replace with your content */}
-                <div className="py-4">
+                <div className="sm:py-4">
                   {/* <div className="border-4 border-gray-200 border-dashed rounded-lg h-96" /> */}
                   {/* Hero section */}
                   <div className="relative">
