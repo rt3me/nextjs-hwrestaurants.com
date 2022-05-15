@@ -1,5 +1,3 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Fragment, useState } from 'react'
@@ -18,12 +16,7 @@ import {
 } from '@heroicons/react/outline'
 
 import { ChevronDownIcon } from '@heroicons/react/solid'
-import Footer from './Footer'
-/* import logoMarkSVG from '../public/howard-wangs-logomark.svg' */
 import combinationMarkSVG from '../public/howard-wangs-combinationmark.svg'
-import chefFlamingWokDump from '../public/images/chef-flaming-wok-dump.jpg'
-import stirFryWok from '../public/images/stir-fry-wok.jpg'
-import steamingChickenDish from '../public/images/steaming-chicken-dish.jpg'
 
 const navigation = [
   { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
@@ -101,14 +94,6 @@ const TestHome: NextPage = () => {
         <body class="h-full">
         ```
       */}
-      <Head>
-        <title>Test Home Page | Howard Wang&lsquo;s Restaurants</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Test Home Page | Howard Wang&lsquo;s Restaurants is a group of high-end Chinese restaurants based in Texas."
-        />
-      </Head>
       <div>
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
@@ -532,7 +517,6 @@ const TestHome: NextPage = () => {
               </div>
             </div>
           </main>
-          <Footer />
         </div>
       </div>
     </>
